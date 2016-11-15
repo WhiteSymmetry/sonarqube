@@ -154,7 +154,10 @@ export default class AboutApp extends React.Component {
                 than the last.
               </p>
               <div className="big-spacer-top">
-                <a href={links.qualityGates} target="_blank">Read more</a>
+                <a className="link-with-icon" href={links.qualityGates} target="_blank">
+                  <i className="icon-detach spacer-right"/>
+                  <span>Read more</span>
+                </a>
               </div>
             </div>
           </div>
@@ -170,7 +173,10 @@ export default class AboutApp extends React.Component {
                 the last 30 days is a good option.
               </p>
               <div className="big-spacer-top">
-                <a href={links.leak} target="_blank">Read more</a>
+                <a className="link-with-icon" href={links.leak} target="_blank">
+                  <i className="icon-detach spacer-right"/>
+                  <span>Read more</span>
+                </a>
               </div>
             </div>
           </div>
@@ -185,7 +191,10 @@ export default class AboutApp extends React.Component {
                 25. Configure your Quality Profile with standard-related rules to ensure adherence.
               </p>
               <div className="big-spacer-top">
-                <a href={links.rules} target="_blank">Read more</a>
+                <a className="link-with-icon" href={links.rules} target="_blank">
+                  <i className="icon-detach spacer-right"/>
+                  <span>Read more</span>
+                </a>
               </div>
             </div>
           </div>
