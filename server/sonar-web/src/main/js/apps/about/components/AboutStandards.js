@@ -34,9 +34,9 @@ export default class AboutStandards extends React.Component {
               25. Configure your Quality Profile with standard-related rules to ensure adherence.
             </p>
             <div className="big-spacer-top">
-              <a className="link-with-icon" href={link} target="_blank">
-                <i className="icon-detach spacer-right"/>
+              <a className="about-page-link-more" href={link} target="_blank">
                 <span>Read more</span>
+                <i className="icon-detach spacer-left"/>
               </a>
             </div>
           </div>

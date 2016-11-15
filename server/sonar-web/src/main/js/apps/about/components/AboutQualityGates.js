@@ -35,9 +35,9 @@ export default class AboutQualityGates extends React.Component {
               than the last.
             </p>
             <div className="big-spacer-top">
-              <a className="link-with-icon" href={link} target="_blank">
-                <i className="icon-detach spacer-right"/>
+              <a className="about-page-link-more" href={link} target="_blank">
                 <span>Read more</span>
+                <i className="icon-detach spacer-left"/>
               </a>
             </div>
           </div>

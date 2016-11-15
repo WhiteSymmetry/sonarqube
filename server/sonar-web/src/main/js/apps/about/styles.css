@@ -107,7 +107,11 @@
 }
 
 .about-page-link-more {
-  margin-top: 15px;
+  border: none;
+}
+
+.about-page-link-more > span {
+  border-bottom: 1px solid #cae3f2;
 }
 
 .about-page-issues {

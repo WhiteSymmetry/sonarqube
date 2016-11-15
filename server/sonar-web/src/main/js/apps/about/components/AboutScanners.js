@@ -44,9 +44,9 @@ export default class AboutScanners extends React.Component {
                   This Java-based command-line tool can analyze any languages SonarQube supports.
                 </p>
                 <div className="big-spacer-top">
-                  <a className="link-with-icon" href={links.sonarqube} target="_blank">
-                    <i className="icon-detach spacer-right"/>
+                  <a className="about-page-link-more" href={links.sonarqube} target="_blank">
                     <span>Read more</span>
+                    <i className="icon-detach spacer-left"/>
                   </a>
                 </div>
               </div>
@@ -60,9 +60,9 @@ export default class AboutScanners extends React.Component {
                   MSBuild projects and solutions.
                 </p>
                 <div className="big-spacer-top">
-                  <a className="link-with-icon" href={links.msbuild} target="_blank">
-                    <i className="icon-detach spacer-right"/>
+                  <a className="about-page-link-more" href={links.msbuild} target="_blank">
                     <span>Read more</span>
+                    <i className="icon-detach spacer-left"/>
                   </a>
                 </div>
               </div>
@@ -76,9 +76,9 @@ export default class AboutScanners extends React.Component {
                   Maven project.
                 </p>
                 <div className="big-spacer-top">
-                  <a className="link-with-icon" href={links.maven} target="_blank">
-                    <i className="icon-detach spacer-right"/>
+                  <a className="about-page-link-more" href={links.maven} target="_blank">
                     <span>Read more</span>
+                    <i className="icon-detach spacer-left"/>
                   </a>
                 </div>
               </div>
@@ -91,9 +91,9 @@ export default class AboutScanners extends React.Component {
                   The SonarQube Scanner for Gradle provides an easy way to start analysis of a Gradle project.
                 </p>
                 <div className="big-spacer-top">
-                  <a className="link-with-icon" href={links.gradle} target="_blank">
-                    <i className="icon-detach spacer-right"/>
+                  <a className="about-page-link-more" href={links.gradle} target="_blank">
                     <span>Read more</span>
+                    <i className="icon-detach spacer-left"/>
                   </a>
                 </div>
               </div>
@@ -106,9 +106,9 @@ export default class AboutScanners extends React.Component {
                   The SonarQube Scanner for Jenkins lets you integrate analysis seamlessly into a job or a pipeline.
                 </p>
                 <div className="big-spacer-top">
-                  <a className="link-with-icon" href={links.jenkins} target="_blank">
-                    <i className="icon-detach spacer-right"/>
+                  <a className="about-page-link-more" href={links.jenkins} target="_blank">
                     <span>Read more</span>
+                    <i className="icon-detach spacer-left"/>
                   </a>
                 </div>
               </div>
@@ -121,9 +121,9 @@ export default class AboutScanners extends React.Component {
                   The SonarQube Scanner for Ant lets you start an analysis directly from an Apache Ant script.
                 </p>
                 <div className="big-spacer-top">
-                  <a className="link-with-icon" href={links.ant} target="_blank">
-                    <i className="icon-detach spacer-right"/>
+                  <a className="about-page-link-more" href={links.ant} target="_blank">
                     <span>Read more</span>
+                    <i className="icon-detach spacer-left"/>
                   </a>
                 </div>
               </div>

@@ -35,9 +35,9 @@ export default class AboutLeakPeriod extends React.Component {
               the last 30 days is a good option.
             </p>
             <div className="big-spacer-top">
-              <a className="link-with-icon" href={link} target="_blank">
-                <i className="icon-detach spacer-right"/>
+              <a className="about-page-link-more" href={link} target="_blank">
                 <span>Read more</span>
+                <i className="icon-detach spacer-left"/>
               </a>
             </div>
           </div>
