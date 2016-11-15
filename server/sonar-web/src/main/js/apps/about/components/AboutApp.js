@@ -145,7 +145,8 @@ export default class AboutApp extends React.Component {
 
           <div className="about-page-section">
             <div className="about-page-container clearfix">
-              <div className="pull-right" style={{ width: 500, height: 175 }}/>
+              <img className="pull-right" src="/images/understanding-quality-gates.svg" width={500} height={175}
+                   alt="Understanding Quality Gates"/>
               <h2 className="about-page-header">Understanding Quality Gates</h2>
               <p className="about-page-text">
                 Your project's quality gate is the set of conditions the project must meet before it can be released
@@ -160,7 +161,8 @@ export default class AboutApp extends React.Component {
 
           <div className="about-page-section">
             <div className="about-page-container clearfix">
-              <div className="pull-left" style={{ width: 500, height: 175 }}/>
+              <img className="pull-left" src="/images/understanding-leak-period.svg" width={500} height={175}
+                   alt="Understanding the Leak Period"/>
               <h2 className="about-page-header">Understanding the Leak Period</h2>
               <p className="about-page-text">
                 The leak metaphor and the default Quality Gate are based on the leak period - the recent period against
@@ -175,7 +177,8 @@ export default class AboutApp extends React.Component {
 
           <div className="about-page-section">
             <div className="about-page-container clearfix">
-              <div className="pull-right" style={{ width: 500, height: 175 }}/>
+              <img className="pull-right" src="/images/recognized-standards.svg" width={500} height={175}
+                   alt="Conform to recognized standards"/>
               <h2 className="about-page-header">Conform to recognized standards</h2>
               <p className="about-page-text">
                 SonarAnalyzers offer rules that support industry standards: MISRA, CERT, CWE, OWASP Top 10 and SANS Top
