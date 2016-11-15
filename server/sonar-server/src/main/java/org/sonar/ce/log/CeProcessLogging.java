@@ -19,16 +19,19 @@
  */
 package org.sonar.ce.log;
 
+import org.sonar.process.ProcessId;
 import org.sonar.process.Props;
 import org.sonar.server.app.ServerProcessLogging;
 
+import static org.sonar.ce.log.CeLogging.MDC_CE_TASK_UUID;
+
 /**
- * Configure logback for the Compute Engine process. Logs are written to file "ce.log" in SQ's log directory.
+ * Configure logback for the Conpute Engine process. Logs are written to file "ce.log" in SQ's log directory.
  */
 public class CeProcessLogging extends ServerProcessLogging {
 
   public CeProcessLogging() {
-    super("ce", "%X{ceTaskUuid}");
+    super(ProcessId.COMPUTE_ENGINE, "%X{" + MDC_CE_TASK_UUID + "}");
   }
 
   @Override
