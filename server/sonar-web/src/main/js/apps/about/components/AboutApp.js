@@ -21,20 +21,17 @@ import React from 'react';
 import keyBy from 'lodash/keyBy';
 import LoginSection from './LoginSection';
 import LoginForm from './LoginForm';
-import DropImage from './DropImage';
 import AboutProjects from './AboutProjects';
+import AboutCleanCode from './AboutCleanCode';
 import AboutIssues from './AboutIssues';
+import AboutQualityGates from './AboutQualityGates';
+import AboutLeakPeriod from './AboutLeakPeriod';
+import AboutStandards from './AboutStandards';
 import AboutScanners from './AboutScanners';
 import { translate } from '../../../helpers/l10n';
 import '../styles.css';
 import { searchProjects } from '../../../api/components';
 import { getFacet } from '../../../api/issues';
-
-const links = {
-  leak: 'http://docs.sonarqube.org/display/HOME/Fixing+the+Water+Leak',
-  qualityGates: 'http://docs.sonarqube.org/display/SONAR/Quality+Gates',
-  rules: 'http://docs.sonarqube.org/display/SONAR/Rules'
-};
 
 export default class AboutApp extends React.Component {
   state = {
@@ -123,81 +120,18 @@ export default class AboutApp extends React.Component {
               </div>
           )}
 
-          <div className="about-page-section">
-            <div className="about-page-center-container">
-              <h2 className="about-page-header">Keep your code clean by fixing the leak</h2>
-              <p className="about-page-text about-page-text-center">
-                By fixing new issues as they appear in code, you create and maintain a clean code base.
-                <br/>
-                Even on legacy projects, focusing on keeping new code clean will eventually yield a code base you can be
-                proud of.
-              </p>
-              <div className="about-page-section-image">
-                <DropImage/>
-              </div>
-            </div>
-          </div>
+          <AboutCleanCode/>
 
           <AboutIssues
               bugs={this.state.issueTypes['BUG'].count}
               vulnerabilities={this.state.issueTypes['VULNERABILITY'].count}
               codeSmells={this.state.issueTypes['CODE_SMELL'].count}/>
 
-          <div className="about-page-section">
-            <div className="about-page-container clearfix">
-              <img className="pull-right" src="/images/understanding-quality-gates.svg" width={500} height={175}
-                   alt="Understanding Quality Gates"/>
-              <h2 className="about-page-header">Understanding Quality Gates</h2>
-              <p className="about-page-text">
-                Your project's quality gate is the set of conditions the project must meet before it can be released
-                into production. The quality gate is designed to ensure that the next version's quality will be better
-                than the last.
-              </p>
-              <div className="big-spacer-top">
-                <a className="link-with-icon" href={links.qualityGates} target="_blank">
-                  <i className="icon-detach spacer-right"/>
-                  <span>Read more</span>
-                </a>
-              </div>
-            </div>
-          </div>
+          <AboutQualityGates/>
 
-          <div className="about-page-section">
-            <div className="about-page-container clearfix">
-              <img className="pull-left" src="/images/understanding-leak-period.svg" width={500} height={175}
-                   alt="Understanding the Leak Period"/>
-              <h2 className="about-page-header">Understanding the Leak Period</h2>
-              <p className="about-page-text">
-                The leak metaphor and the default Quality Gate are based on the leak period - the recent period against
-                which you're tracking issues. For some <code>previous_version</code> makes the most sense, for others
-                the last 30 days is a good option.
-              </p>
-              <div className="big-spacer-top">
-                <a className="link-with-icon" href={links.leak} target="_blank">
-                  <i className="icon-detach spacer-right"/>
-                  <span>Read more</span>
-                </a>
-              </div>
-            </div>
-          </div>
+          <AboutLeakPeriod/>
 
-          <div className="about-page-section">
-            <div className="about-page-container clearfix">
-              <img className="pull-right" src="/images/recognized-standards.svg" width={500} height={175}
-                   alt="Conform to recognized standards"/>
-              <h2 className="about-page-header">Conform to recognized standards</h2>
-              <p className="about-page-text">
-                SonarAnalyzers offer rules that support industry standards: MISRA, CERT, CWE, OWASP Top 10 and SANS Top
-                25. Configure your Quality Profile with standard-related rules to ensure adherence.
-              </p>
-              <div className="big-spacer-top">
-                <a className="link-with-icon" href={links.rules} target="_blank">
-                  <i className="icon-detach spacer-right"/>
-                  <span>Read more</span>
-                </a>
-              </div>
-            </div>
-          </div>
+          <AboutStandards/>
 
           <AboutScanners/>
         </div>
